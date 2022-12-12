@@ -11,6 +11,15 @@
 	<groupId>tn.esprit</groupId>
 	<artifactId>ExamThourayaS2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+    <distributionManagement>
+        <repository>
+            <id>nexus-site</id>
+            <url>http://192.168.1.133:8081/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    
 	<name>ExamThourayaS2</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
