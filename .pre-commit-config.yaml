@@ -1,0 +1,7 @@
+repos:
+    - repo: https://github.com/Dragozou/DEVOPS
+      rev: v1.0.0
+      hooks:
+            - id: secrets_filecontent
+            - id: secrets_filename
+            - id: hooks_version_check
