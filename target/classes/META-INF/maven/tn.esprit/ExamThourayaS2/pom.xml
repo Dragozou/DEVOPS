@@ -3,6 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
+	
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.4.RELEASE</version>
@@ -10,7 +11,17 @@
 	</parent>
 	<groupId>tn.esprit</groupId>
 	<artifactId>ExamThourayaS2</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
+	
+	
+    <distributionManagement>
+  		<repository>
+    		<id>maven-releases</id>
+   			<url>http://192.168.1.137:8081/repository/maven-releases</url>
+  		</repository>
+	</distributionManagement>
+    
+    
 	<name>ExamThourayaS2</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -45,6 +56,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>devops-ratrappage</finalName>
 	</build>
 
 </project>
